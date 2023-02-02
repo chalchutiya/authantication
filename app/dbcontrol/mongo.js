@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
-const client = new MongoClient('mongodb://localhost:27017')
-const dbname = 'college';
+const client = new MongoClient('mongodb+srv://root:root@cluster0.oovckw5.mongodb.net/test')
+const dbname = 'cloud';
 
 async function dbconnect() {
     const result = await client.connect()

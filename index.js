@@ -15,6 +15,7 @@ app.use(cors({
 
 
 // this is for get all the data
+
 app.get('', async (req, resp) => {
     allcds=await credential.getcds();
    resp.send(allcds);
@@ -42,4 +43,6 @@ app.post('/login', async (req, resp) => {
 })
 
 
-app.listen(5000);
+app.listen(5000,()=>{
+    console.log("listending on the 5000 port");
+});
