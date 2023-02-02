@@ -21,7 +21,7 @@ async function login() {
     }
 
 
-    resp = await fetch('http://localhost:5000/login', req);
+    resp = await fetch('https://excited-elk-drawers.cyclic.app/login', req);
     statuscode = resp.status;
     if (statuscode == 401) {
       message = await resp.json();
